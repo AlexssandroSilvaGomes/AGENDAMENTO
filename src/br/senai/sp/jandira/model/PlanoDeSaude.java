@@ -38,6 +38,6 @@ public class PlanoDeSaude {
 	}
 	
 	public LocalDate getValidade() {
-		return validade;
+		return validade; 
 	}
 }
