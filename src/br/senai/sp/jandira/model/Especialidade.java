@@ -8,6 +8,7 @@ public class Especialidade {
 	private String descricao;
 	
 	//metodos de acesso aos atributos
+	//nome
 	public void setNome(String nome) {
 		if (nome.length() >= 3) {
 			this.nome = nome;
@@ -20,6 +21,7 @@ public class Especialidade {
 		return nome;
 	}
 	
+	//descrição
 	public void setDescricao(String descricao) {
 		if (descricao.length() >= 10) {
 			this.descricao = descricao;

@@ -9,6 +9,7 @@ public class PlanoDeSaude {
 	private String numero;
 	private LocalDate validade;
 	
+	//operadora
 	public void setOperadora(String operadora) {
 		this.operadora = operadora;
 	}
@@ -17,6 +18,7 @@ public class PlanoDeSaude {
 		return operadora;
 	}
 	
+	//categoria
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
@@ -25,6 +27,7 @@ public class PlanoDeSaude {
 		return categoria;
 	}
 	
+	//numero
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
@@ -33,6 +36,7 @@ public class PlanoDeSaude {
 		return numero;
 	}
 	
+	//validade
 	public void setValidade(LocalDate validade) {
 		this.validade = validade;
 	}
