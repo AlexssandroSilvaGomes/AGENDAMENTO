@@ -7,7 +7,8 @@ public class Especialidade {
 	private String nome;
 	private String descricao;
 	
-	//Construtores de classe
+	//Construtores de Classe
+	//construtores são métodos inicializadores
 	//método construtor default
 	
 	public Especialidade() {

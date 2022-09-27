@@ -8,6 +8,10 @@ public class TesteWrappers {
 
 	public static void main(String[] args) {
 		
+		int a = 5;
+		Integer b = 5; //wrapper = embrulhar, empacotar, envolver //é um objeto, uma classe
+		
+		
 		ArrayList<Especialidade> especialidades = new ArrayList<>();
 		
 		Especialidade e1 = new Especialidade();
