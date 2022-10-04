@@ -24,8 +24,9 @@ public class TesteObjetos {
         Especialidade e4 = new Especialidade("Clinica geral", "faz tudo");
 //		JOptionPane.showMessageDialog(null, e1.getNome());
 
-        Especialidade e3 = e1;
+        Especialidade e3 = e4;
         e3.setNome("Qualquer Coisa!");
+        e3.setDescricao("é literalemte qualqer ocisa");
         
         EspecialidadeDAO.gravar(e1);
         EspecialidadeDAO.gravar(e2);
@@ -33,6 +34,17 @@ public class TesteObjetos {
         
         EspecialidadeDAO.gravar(e3);
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa " + EspecialidadeDAO.getEspecialidades().size());
+        
+//        System.out.println(EspecialidadeDAO.getEspecialidade(102).getNome());
+        EspecialidadeDAO.excluir(101);
+        System.out.println(EspecialidadeDAO.getEspecialidades().size());
+        System.out.println(EspecialidadeDAO.getEspecialidade(102).getNome());
+        
+        Especialidade correta = new Especialidade("Wenamechainsama", "é literamente qualquer coisa");
+        correta.setCodigo(e3.getCodigo());
+        EspecialidadeDAO.atualizar(correta);
+        System.out.println(EspecialidadeDAO.getEspecialidade(102).getNome());
+        
 
 //		JOptionPane.showMessageDialog(null, e1.getNome());
         ArrayList<Especialidade> especialidades = new ArrayList<>();

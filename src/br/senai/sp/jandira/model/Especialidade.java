@@ -36,6 +36,10 @@ public class Especialidade {
         return codigo;
     }
 
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
+    
     //contador
     public static int getContador() {    
         return contador;
